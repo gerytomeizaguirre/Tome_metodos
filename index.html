@@ -9,7 +9,58 @@
 
     <style>
 
+            body {
+                background: linear-gradient(135deg, #0932eb 0%, #8162a0 100%);
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
+            .form-signin {
+                max-width: 400px;
+                background: white;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            }
+
+            .form-signin h1 {
+                color: #333;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .form-floating {
+                margin-bottom: 1rem;
+            }
+
+            .form-control {
+                border-radius: 8px;
+                border: 1px solid #ddd;
+                padding: 0.75rem;
+                font-size: 0.95rem;
+            }
+
+            .form-control:focus {
+                border-color: #667eea;
+                box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            }
+
+            .btn-primary {
+                background: linear-gradient(135deg, #764ba2 20%, #667eea 100%);
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                margin-top: 1rem;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            }
+            
     </style>
 
 
@@ -21,20 +72,27 @@
             
             <div class="form-floating"> 
                 <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
-                <label for="floatingInput">Nombre</label>
-                <p id="errornombre"></p>
+                <label for="floatingInput">Nombre</label>    
             </div>
 
             <div class="form-floating"> 
                 <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellido" required>
-                <label for="floatingInput">Apellido</label>
-                <p id="errornombre"></p>
+                <label for="floatingInput">Apellido</label>   
             </div>
 
             <div class="form-floating"> 
                 <input type="number" class="form-control" id="age" name="age" placeholder="Edad" required>
-                <label for="floatingInput">Edad</label>
-                <p id="errornombre"></p>
+                <label for="floatingInput">Edad</label>  
+            </div>
+
+            <div class="form-floating"> 
+                <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electronico">
+                <label for="floatingInput">Correo Electronico</label>  
+            </div>
+
+            <div class="form-floating"> 
+                <input type="number" class="form-control" id="cel" name="cel" placeholder="Celular">
+                <label for="floatingInput">Celular</label>  
             </div>
             
             <button class="btn btn-primary w-100 py-2" type="submit">Enviar</button>
