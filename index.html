@@ -16,24 +16,23 @@
 </head>
 <body>
     <main class="form-signin w-100 m-auto">
-        <form id="formulario"> 
-            <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" > -->
+        <form id="formulario" action="recepcion.php" method="POST"> 
             <h1 class="h3 mb-3 fw-normal">Formulario de Registro</h1>
             
             <div class="form-floating"> 
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
                 <label for="floatingInput">Nombre</label>
                 <p id="errornombre"></p>
             </div>
 
             <div class="form-floating"> 
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellido" required>
                 <label for="floatingInput">Apellido</label>
                 <p id="errornombre"></p>
             </div>
 
             <div class="form-floating"> 
-                <input type="number" class="form-control" id="nombre" placeholder="Nombre">
+                <input type="number" class="form-control" id="age" name="age" placeholder="Edad" required>
                 <label for="floatingInput">Edad</label>
                 <p id="errornombre"></p>
             </div>
