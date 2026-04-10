@@ -4,8 +4,43 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Metodo GET</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+
+    </style>
+
+
 </head>
 <body>
-    
+    <main class="form-signin w-100 m-auto">
+        <form id="formulario" action="resultados.php" method="GET"> 
+            <h1 class="h3 mb-3 fw-normal">Pedido</h1>
+            
+            <div class="form-floating"> 
+                <input type="text" class="form-control" id="search" name="search" placeholder="Busqueda">
+                <label for="floatingInput">¿Que desea Ordenar?</label>
+                
+            </div>
+
+
+            <div class="form-floating"> 
+                <label for="floatingInput">Metodo de Pago: </label> <br>
+                <br>
+                <select name="pay">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+            </div>
+
+
+            <br>
+            
+            <button class="btn btn-primary w-100 py-2" type="submit">Ordena</button>
+        </form>
+    </main>
 </body>
 </html>
