@@ -9,7 +9,7 @@ if (isset($_GET["search"]) && !empty($_GET["search"])){
     $payMay = strtoupper($pay);
 
     echo"<h1>Busqueda</h1>";
-    echo"<p>Busco: ".$search." Tipo: ".$payMay."</p>";
+    echo"<p>Busco: ".$search." Pago: ".$payMay."</p>";
     echo"<p>".$search." tiene ".$cantSea." de letras</p>";
     echo"<p>En minuscula: ".$minSea."</p>";
 
